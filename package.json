@@ -1,0 +1,29 @@
+{
+  "name": "@gyugyu/markuplint-markdown-parser",
+  "version": "0.1.0",
+  "description": "",
+  "keywords": [],
+  "author": "Yusuke Yagyu <yu@hoaxster.net>",
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "pnpm run build"
+  },
+  "dependencies": {
+    "@markuplint/html-parser": "^3.10.0",
+    "@markuplint/ml-ast": "^3.2.0",
+    "@markuplint/parser-utils": "^3.10.0",
+    "remark": "^13.0.0"
+  },
+  "devDependencies": {
+    "@types/unist": "^3.0.0",
+    "typescript": "^5.1.6"
+  }
+}
